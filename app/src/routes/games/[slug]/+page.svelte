@@ -17,7 +17,7 @@
                 info = data;
             }
 
-            if (!res.ok) goto('/errors/kicked');
+            if (!res.status == 401) goto('/errors/kicked');
 
         }, 1000);
     })
