@@ -13,6 +13,7 @@ async function checkForDeadGames() {
             }
 
             if (games[game].players.length === 0) {
+                console.log("deleting game: ", game);
                 delete games[game];
             }
         }
