@@ -19,7 +19,7 @@
 
             if (!res.status == 401) goto('/errors/kicked');
 
-        }, 500);
+        }, 700);
     })
 
     onDestroy(() => {
