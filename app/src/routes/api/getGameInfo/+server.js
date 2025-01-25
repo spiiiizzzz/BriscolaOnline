@@ -18,7 +18,7 @@ export function GET({url, cookies}){
         });
     }
 
-    games[gameId].players[games[gameId].players.indexOf(games[gameId].players.filter(p => p.gameToken == token))].lastUpdate = Date.now();
+    games[gameId].players[games[gameId].players.indexOf(games[gameId].players.map(p => p.gameToken))].lastUpdate = Date.now();
 
     const info = {
         gameId: gameId,
